@@ -1,0 +1,90 @@
+
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" 
+          xmlns:w="urn:schemas-microsoft-com:office:word" 
+          xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <title>Ideation Phase - Problem Statements Definition</title>
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                line-height: 1.6;
+                color: #2d2724;
+                background-color: #faf6eb;
+                margin: 20px;
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #c05c46;
+                border-bottom: 2px solid #2d2724;
+                padding-bottom: 5px;
+            }
+            h2, h3, h4 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #2d2724;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 2px solid #2d2724;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #dda15e;
+                color: #2d2724;
+                font-weight: bold;
+            }
+            .meta-table {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            .meta-table th {
+                background-color: #2d2724;
+                color: #faf6eb;
+            }
+            .highlight {
+                background-color: #faf6eb;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 2px 5px;
+                border: 1px solid #2d2724;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ideation Phase - Problem Statements Definition</h1>
+        <table class="meta-table">
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td><b>Date</b></td><td>11 July 2026</td></tr>
+            <tr><td><b>Team ID</b></td><td>TEAM-MERN-03</td></tr>
+            <tr><td><b>Project Name</b></td><td>ShopEZ - Vintage Sepia Neubrutalist E-Commerce Platform</td></tr>
+        </table>
+        
+    <h2>Customer Problem Statement Template</h2>
+    <p>Create a problem statement to understand your customer's point of view. A well-articulated customer problem statement allows you and your team to find the ideal solution for the challenges your customers face.</p>
+    
+    <h3>Problem Statement (PS-1): Buyer Viewpoint</h3>
+    <table>
+        <tr><th>Prompt</th><th>Details</th></tr>
+        <tr><td><b>I am</b></td><td>A retro gaming collector and vintage goods enthusiast.</td></tr>
+        <tr><td><b>I'm trying to</b></td><td>Browse and purchase authentic vintage accessories and gaming controllers (such as the Ares Pro Controller) online.</td></tr>
+        <tr><td><b>But</b></td><td>Most modern e-commerce sites feel sterile, flat, and corporate, offering zero nostalgic personality.</td></tr>
+        <tr><td><b>Because</b></td><td>They focus on minimalist corporate layouts with generic grey themes that do not match the cozy, fun arcade gaming vibe of the collectibles.</td></tr>
+        <tr><td><b>Which makes me feel</b></td><td>Uninspired, disconnected from my hobby, and bored while shopping.</td></tr>
+    </table>
+
+    <h3>Problem Statement (PS-2): Seller Viewpoint</h3>
+    <table>
+        <tr><th>Prompt</th><th>Details</th></tr>
+        <tr><td><b>I am</b></td><td>A small boutique merchant selling vintage typewriter keyboards and record players.</td></tr>
+        <tr><td><b>I'm trying to</b></td><td>Manage my product catalog, update stock counts, and verify my incoming orders and sales revenue in Rupees (₹).</td></tr>
+        <tr><td><b>But</b></td><td>Existing e-commerce consoles are overly complicated, cluttered, and fail to alert me when an item is running low on stock.</td></tr>
+        <tr><td><b>Because</b></td><td>Their interfaces are designed for enterprise sellers rather than local boutique merchants, offering no visual progress alerts.</td></tr>
+        <tr><td><b>Which makes me feel</b></td><td>Stressed, prone to selling out unexpectedly, and overwhelmed by managing my storefront.</td></tr>
+    </table>
+    
+    </body>
+    </html>
+    

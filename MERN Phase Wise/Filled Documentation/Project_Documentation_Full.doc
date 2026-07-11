@@ -1,0 +1,95 @@
+
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" 
+          xmlns:w="urn:schemas-microsoft-com:office:word" 
+          xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <title>Full Stack MERN Project Documentation</title>
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                line-height: 1.6;
+                color: #2d2724;
+                background-color: #faf6eb;
+                margin: 20px;
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #c05c46;
+                border-bottom: 2px solid #2d2724;
+                padding-bottom: 5px;
+            }
+            h2, h3, h4 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #2d2724;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 2px solid #2d2724;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #dda15e;
+                color: #2d2724;
+                font-weight: bold;
+            }
+            .meta-table {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            .meta-table th {
+                background-color: #2d2724;
+                color: #faf6eb;
+            }
+            .highlight {
+                background-color: #faf6eb;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 2px 5px;
+                border: 1px solid #2d2724;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Full Stack MERN Project Documentation</h1>
+        <table class="meta-table">
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td><b>Date</b></td><td>11 July 2026</td></tr>
+            <tr><td><b>Team ID</b></td><td>TEAM-MERN-03</td></tr>
+            <tr><td><b>Project Name</b></td><td>ShopEZ - Vintage Sepia Neubrutalist E-Commerce Platform</td></tr>
+        </table>
+        
+    <h2>1. Introduction</h2>
+    <ul>
+        <li><b>Project Title:</b> ShopEZ - Vintage Sepia Neubrutalist E-Commerce Platform</li>
+        <li><b>Team Members:</b> Full Stack Development Team</li>
+    </ul>
+
+    <h2>2. Project Overview</h2>
+    <ul>
+        <li><b>Purpose:</b> Provide a nostalgic, pleasant, and premium shopping portal for retro-tech collectors, eliminating corporate flat layouts.</li>
+        <li><b>Key Features:</b> Shimmering skeletons, advanced sorting filters, 3D flipping card checkouts, and clean seller metrics.</li>
+    </ul>
+
+    <h2>3. Architecture</h2>
+    <ul>
+        <li><b>Frontend:</b> Single Page App (SPA) built with React.js using hooks, context providers, custom toast managers, and Bootstrap grids.</li>
+        <li><b>Backend:</b> Node.js & Express.js with custom asyncHandler wrapping, route validations, and JSON controllers.</li>
+        <li><b>Database:</b> MongoDB document schema managing orders, users, and product catalogs.</li>
+    </ul>
+
+    <h2>4. Setup Instructions</h2>
+    <p>Please refer to the repository <span class="highlight">README.md</span> for the latest installation commands, ENV configurations, and seeding guidelines.</p>
+
+    <h2>5. Running the Application</h2>
+    <p>Run the local backend server via <span class="highlight">npm start</span> under `backend/` and frontend dev server via <span class="highlight">npm start</span> under `frontend/`.</p>
+
+    <h2>6. Authentication & Security</h2>
+    <p>Passwords are hashed using Bcrypt. Routes are guarded with JWT verifiers. Stale sessions are managed via global Axios response interceptors.</p>
+    
+    </body>
+    </html>
+    

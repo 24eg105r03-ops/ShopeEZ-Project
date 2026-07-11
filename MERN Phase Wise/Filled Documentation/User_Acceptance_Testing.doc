@@ -1,0 +1,113 @@
+
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" 
+          xmlns:w="urn:schemas-microsoft-com:office:word" 
+          xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <title>Project Development - User Acceptance Testing (UAT)</title>
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                line-height: 1.6;
+                color: #2d2724;
+                background-color: #faf6eb;
+                margin: 20px;
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #c05c46;
+                border-bottom: 2px solid #2d2724;
+                padding-bottom: 5px;
+            }
+            h2, h3, h4 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #2d2724;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 2px solid #2d2724;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #dda15e;
+                color: #2d2724;
+                font-weight: bold;
+            }
+            .meta-table {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            .meta-table th {
+                background-color: #2d2724;
+                color: #faf6eb;
+            }
+            .highlight {
+                background-color: #faf6eb;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 2px 5px;
+                border: 1px solid #2d2724;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Project Development - User Acceptance Testing (UAT)</h1>
+        <table class="meta-table">
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td><b>Date</b></td><td>11 July 2026</td></tr>
+            <tr><td><b>Team ID</b></td><td>TEAM-MERN-03</td></tr>
+            <tr><td><b>Project Name</b></td><td>ShopEZ - Vintage Sepia Neubrutalist E-Commerce Platform</td></tr>
+        </table>
+        
+    <h2>UAT Plan & Test Cases</h2>
+    <table>
+        <tr>
+            <th>Test Case ID</th>
+            <th>Scenario</th>
+            <th>Steps to Execute</th>
+            <th>Expected Outcome</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td><b>TC-001</b></td>
+            <td>User Authentication login</td>
+            <td>1. Navigate to `/login`<br>2. Fill in seeded details.<br>3. Submit.</td>
+            <td>Successful redirect to home; token set in local storage.</td>
+            <td><span style="color: green; font-weight: bold;">PASS</span></td>
+        </tr>
+        <tr>
+            <td><b>TC-002</b></td>
+            <td>Catalog Filtering</td>
+            <td>1. Set price filter to max 4000.<br>2. Select Gaming category.</td>
+            <td>Catalog updates in real-time to show Ares Pro Controller.</td>
+            <td><span style="color: green; font-weight: bold;">PASS</span></td>
+        </tr>
+        <tr>
+            <td><b>TC-003</b></td>
+            <td>Flipping Card Payment</td>
+            <td>1. Proceed to checkout.<br>2. Choose Credit Card.<br>3. Click CVV field.</td>
+            <td>Card widget performs 3D Y-axis flip to show back strip and signature box.</td>
+            <td><span style="color: green; font-weight: bold;">PASS</span></td>
+        </tr>
+        <tr>
+            <td><b>TC-004</b></td>
+            <td>Authorization Console</td>
+            <td>1. Fill card details.<br>2. Submit pay order.</td>
+            <td>Shows retro terminal logs processing payment steps, clearing bag, and redirecting.</td>
+            <td><span style="color: green; font-weight: bold;">PASS</span></td>
+        </tr>
+        <tr>
+            <td><b>TC-005</b></td>
+            <td>Stale Auth Interceptor</td>
+            <td>1. Open app with stale database token.<br>2. Attempt Checkout.</td>
+            <td>Axios intercepts 401, triggers logout, and redirects to `/login`.</td>
+            <td><span style="color: green; font-weight: bold;">PASS</span></td>
+        </tr>
+    </table>
+    
+    </body>
+    </html>
+    

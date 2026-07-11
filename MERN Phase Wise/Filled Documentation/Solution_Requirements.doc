@@ -1,0 +1,128 @@
+
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" 
+          xmlns:w="urn:schemas-microsoft-com:office:word" 
+          xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <title>Requirement Analysis - Solution Requirements</title>
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                line-height: 1.6;
+                color: #2d2724;
+                background-color: #faf6eb;
+                margin: 20px;
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #c05c46;
+                border-bottom: 2px solid #2d2724;
+                padding-bottom: 5px;
+            }
+            h2, h3, h4 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #2d2724;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 2px solid #2d2724;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #dda15e;
+                color: #2d2724;
+                font-weight: bold;
+            }
+            .meta-table {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            .meta-table th {
+                background-color: #2d2724;
+                color: #faf6eb;
+            }
+            .highlight {
+                background-color: #faf6eb;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 2px 5px;
+                border: 1px solid #2d2724;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Requirement Analysis - Solution Requirements</h1>
+        <table class="meta-table">
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td><b>Date</b></td><td>11 July 2026</td></tr>
+            <tr><td><b>Team ID</b></td><td>TEAM-MERN-03</td></tr>
+            <tr><td><b>Project Name</b></td><td>ShopEZ - Vintage Sepia Neubrutalist E-Commerce Platform</td></tr>
+        </table>
+        
+    <h2>Functional Requirements (FR)</h2>
+    <table>
+        <tr><th>FR ID</th><th>Epic / Module</th><th>Sub-Requirement / Functional Rule</th></tr>
+        <tr>
+            <td><b>FR-1</b></td>
+            <td>Catalog & Filtering</td>
+            <td>
+                - Display vintage items with discount badges and stock indicators.<br>
+                - Filter items by category, price ranges, and sorting (ratings, prices).
+            </td>
+        </tr>
+        <tr>
+            <td><b>FR-2</b></td>
+            <td>Flipping Payment Gateway</td>
+            <td>
+                - Input card details showing a live-updating credit card card layout.<br>
+                - Flip card on CVV focus. Simulate secure authorization loop logs.
+            </td>
+        </tr>
+        <tr>
+            <td><b>FR-3</b></td>
+            <td>Seller Dashboard Metrics</td>
+            <td>
+                - Display sales totals in Rupees (₹), total orders, and unit tracking.<br>
+                - Trigger inventory low-stock alerts and manage catalog items (CRUD).
+            </td>
+        </tr>
+        <tr>
+            <td><b>FR-4</b></td>
+            <td>Interactive Profile Manager</td>
+            <td>
+                - Allow accounts to update full names, emails, and passwords safely.
+            </td>
+        </tr>
+    </table>
+
+    <h2>Non-Functional Requirements (NFR)</h2>
+    <table>
+        <tr><th>NFR ID</th><th>Requirement</th><th>Description & Implementation</th></tr>
+        <tr>
+            <td><b>NFR-1</b></td>
+            <td>Usability</td>
+            <td>Cozy visual layout with clear tactile feedbacks and responsive viewports.</td>
+        </tr>
+        <tr>
+            <td><b>NFR-2</b></td>
+            <td>Security</td>
+            <td>Bcrypt hashing of user passwords; JWT security tokens inside request headers.</td>
+        </tr>
+        <tr>
+            <td><b>NFR-3</b></td>
+            <td>Reliability</td>
+            <td>Global error catches and async handlers to prevent app crashes.</td>
+        </tr>
+        <tr>
+            <td><b>NFR-4</b></td>
+            <td>Scalability</td>
+            <td>Three-tier architecture separating endpoints, validations, and databases.</td>
+        </tr>
+    </table>
+    
+    </body>
+    </html>
+    

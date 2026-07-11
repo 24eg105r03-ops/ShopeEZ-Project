@@ -1,0 +1,112 @@
+
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" 
+          xmlns:w="urn:schemas-microsoft-com:office:word" 
+          xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <title>Requirement Analysis - Technology Stack & Architecture</title>
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                line-height: 1.6;
+                color: #2d2724;
+                background-color: #faf6eb;
+                margin: 20px;
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #c05c46;
+                border-bottom: 2px solid #2d2724;
+                padding-bottom: 5px;
+            }
+            h2, h3, h4 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #2d2724;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 2px solid #2d2724;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #dda15e;
+                color: #2d2724;
+                font-weight: bold;
+            }
+            .meta-table {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            .meta-table th {
+                background-color: #2d2724;
+                color: #faf6eb;
+            }
+            .highlight {
+                background-color: #faf6eb;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 2px 5px;
+                border: 1px solid #2d2724;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Requirement Analysis - Technology Stack & Architecture</h1>
+        <table class="meta-table">
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td><b>Date</b></td><td>11 July 2026</td></tr>
+            <tr><td><b>Team ID</b></td><td>TEAM-MERN-03</td></tr>
+            <tr><td><b>Project Name</b></td><td>ShopEZ - Vintage Sepia Neubrutalist E-Commerce Platform</td></tr>
+        </table>
+        
+    <h2>Technical Stack Components</h2>
+    <table>
+        <tr><th>S.No</th><th>Component</th><th>Description</th><th>Technology Stack</th></tr>
+        <tr>
+            <td>1</td>
+            <td>User Interface</td>
+            <td>Retro Neubrutalist Web View</td>
+            <td>HTML5, Vanilla CSS3 (Courier Prime & Space Mono Google Fonts), React.js, React Router</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Application Logic</td>
+            <td>REST APIs for auth, order processing, and catalogs</td>
+            <td>Node.js, Express.js (Modular Route/Controller pattern)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Schema Validations</td>
+            <td>Input sanitization middleware layers</td>
+            <td>Joi schema structures</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Database</td>
+            <td>Document store for users, orders, and items</td>
+            <td>MongoDB, Mongoose ORM</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Session Security</td>
+            <td>Token encryption and auth validation guards</td>
+            <td>JSON Web Tokens (JWT), Bcrypt</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Payment Mock Gateway</td>
+            <td>Simulated credit card processor</td>
+            <td>React stateful 3D Flip, asynchronous timeout loops</td>
+        </tr>
+    </table>
+
+    <h2>Application Architecture Security</h2>
+    <p><b>JWT Access Verification:</b> Users authenticate via logins, generating secure JWTs placed in the <span class="highlight">Authorization: Bearer</span> headers of subsequent API requests.</p>
+    <p><b>Stale Token Interceptor:</b> Active Axios response interceptor monitors for 401 response codes. If a stale token is found, it clears the token and returns the client to the login screen.</p>
+    
+    </body>
+    </html>
+    

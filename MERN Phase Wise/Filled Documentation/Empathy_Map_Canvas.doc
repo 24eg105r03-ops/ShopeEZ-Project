@@ -1,0 +1,117 @@
+
+    <html xmlns:o="urn:schemas-microsoft-com:office:office" 
+          xmlns:w="urn:schemas-microsoft-com:office:word" 
+          xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <title>Ideation Phase - Empathy Map Canvas</title>
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+                line-height: 1.6;
+                color: #2d2724;
+                background-color: #faf6eb;
+                margin: 20px;
+            }
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #c05c46;
+                border-bottom: 2px solid #2d2724;
+                padding-bottom: 5px;
+            }
+            h2, h3, h4 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #2d2724;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 2px solid #2d2724;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #dda15e;
+                color: #2d2724;
+                font-weight: bold;
+            }
+            .meta-table {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            .meta-table th {
+                background-color: #2d2724;
+                color: #faf6eb;
+            }
+            .highlight {
+                background-color: #faf6eb;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 2px 5px;
+                border: 1px solid #2d2724;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ideation Phase - Empathy Map Canvas</h1>
+        <table class="meta-table">
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td><b>Date</b></td><td>11 July 2026</td></tr>
+            <tr><td><b>Team ID</b></td><td>TEAM-MERN-03</td></tr>
+            <tr><td><b>Project Name</b></td><td>ShopEZ - Vintage Sepia Neubrutalist E-Commerce Platform</td></tr>
+        </table>
+        
+    <h2>Target Customer: Vintage Tech & Gaming Collectible Enthusiasts</h2>
+    <table>
+        <tr>
+            <th style="width: 50%;">THINK & FEEL</th>
+            <th style="width: 50%;">HEAR</th>
+        </tr>
+        <tr>
+            <td>
+                - "I want to shop on a site that feels as retro and cozy as the items I buy."<br>
+                - "Is this checkout secure? Can I trust this retro-looking website?"<br>
+                - "I love interactive designs and retro typewriter fonts!"
+            </td>
+            <td>
+                - Friends talking about cool retro gaming pads and keyboards online.<br>
+                - Communities recommending small boutique shops over Amazon.<br>
+                - Reviews praising clean, interactive buyer layouts.
+            </td>
+        </tr>
+        <tr>
+            <th>SAY & DO</th>
+            <th>SEE</th>
+        </tr>
+        <tr>
+            <td>
+                - Searches for "Ares Pro Controller" and "Vinyl Record Player".<br>
+                - Completes checkout with the flipping credit card.<br>
+                - Prints the invoice copy for a physical folder.
+            </td>
+            <td>
+                - Sterile e-commerce designs everywhere else.<br>
+                - Beautiful high-res product photos of items on ShopEZ.<br>
+                - Responsive cards showing discount tags and remaining counts.
+            </td>
+        </tr>
+        <tr>
+            <th>PAIN</th>
+            <th>GAIN</th>
+        </tr>
+        <tr>
+            <td>
+                - Frustration with boring corporate layouts.<br>
+                - Stale user token errors that break checkout flows.
+            </td>
+            <td>
+                - Nostalgic, pleasant shopping vibes.<br>
+                - Secure credit card simulator logs.
+            </td>
+        </tr>
+    </table>
+    
+    </body>
+    </html>
+    
