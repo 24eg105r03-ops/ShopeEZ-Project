@@ -2,6 +2,13 @@
 
 ShopEZ is a highly polished, responsive MERN-stack e-commerce web application featuring a pleasant retro sepia console aesthetic ('old vibes'). Built with MongoDB, Express, React, and Node.js, the platform offers an authentic retro-gaming catalog (including the Ares Pro Controller), custom neubrutalist UI widgets, a live flipping credit card payment gateway simulator, and fully decoupled controller-pattern backend APIs.
 
+
+## 🖼️ Project Screenshots & Previews
+
+| Catalog Home Page | Seller Operations Console | Secure Login |
+| :---: | :---: | :---: |
+| ![Catalog Home Page](docs/screenshots/home.jpg) | ![Seller Operations Console](docs/screenshots/seller_dashboard.jpg) | ![Secure Login](docs/screenshots/login.jpg) |
+
 ---
 
 ## 🎨 Design Theme & Aesthetics ('Old Vibes')
