@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import api from '../api/axios';
 
 const AuthContext = createContext();
@@ -28,8 +28,23 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
   };
 
+  const updateProfile = async (name, email, password) => {
+    const { data } = await api.put('/auth/profile', { name, email, password });
+    localStorage.setItem('shopez_user', JSON.stringify(data));
+    setUser(data);
+    return data;
+  };
+
+  useEffect(() => {
+    const handleLogout = () => {
+      logout();
+    };
+    window.addEventListener('shopez-logout', handleLogout);
+    return () => window.removeEventListener('shopez-logout', handleLogout);
+  }, []);
+
   return (
-    <AuthContext.Provider value={{ user, login, register, logout }}>
+    <AuthContext.Provider value={{ user, login, register, logout, updateProfile }}>
       {children}
     </AuthContext.Provider>
   );

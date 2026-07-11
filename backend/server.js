@@ -28,7 +28,8 @@ app.use((req, res) => res.status(404).json({ message: 'Route not found' }));
 // Global error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ message: 'Server error' });
+  const status = err.statusCode || err.status || 500;
+  res.status(status).json({ message: err.message || 'Server error' });
 });
 
 const PORT = process.env.PORT || 5000;

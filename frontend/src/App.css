@@ -1,16 +1,378 @@
+/* Pleasant Warm Vintage Sepia Neubrutalist CSS Theme - ShopEZ */
+:root {
+  --primary-color: #c05c46; /* Rust Terracotta */
+  --primary-hover: #a34834;
+  --secondary-color: #2d2724; /* Deep Warm Charcoal */
+  --accent-color: #dda15e; /* Warm Ochre Gold */
+  --success-color: #4d5e3c; /* Forest Green */
+  --bg-light: #faf6eb; /* Cozy Ivory/Cream */
+  --card-bg: #ffffff;
+  --text-dark: #2d2724;
+  --text-muted: #72625b;
+  --border-dark: #2d2724;
+  --border-width: 2.5px;
+  
+  /* Neubrutalist Solid Shadows */
+  --shadow-retro-sm: 2px 2px 0px #2d2724;
+  --shadow-retro-md: 4px 4px 0px #2d2724;
+  --shadow-retro-lg: 7px 7px 0px #2d2724;
+  --border-radius-retro: 4px; /* Classic Blocky Edges */
+  
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
-  background-color: #f8f9fa;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
 }
 
-.product-card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+/* Retro Headers */
+h1, h2, h3, h4, h5, h6, .navbar-brand, .invoice-header h3 {
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+.font-mono-retro {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Glassmorphism Navbar with Retro border */
+.navbar {
+  background: #2d2724 !important;
+  border-bottom: var(--border-width) solid var(--border-dark);
+  padding: 0.75rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  color: #faf6eb !important;
+}
+
+.navbar-brand span {
+  color: var(--accent-color) !important;
 }
 
 .navbar-brand i {
-  color: #ffc107;
+  color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link {
+  color: #faf6eb !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Neubrutalist Retro Cards */
+.product-card {
+  background: var(--card-bg);
+  border: var(--border-width) solid var(--border-dark);
+  border-radius: var(--border-radius-retro);
+  box-shadow: var(--shadow-retro-md);
+  transition: var(--transition-fast);
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-retro-lg);
+  border-color: var(--primary-color);
+}
+
+.product-card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #fdfaf3;
+  padding-bottom: 95%;
+  border-bottom: var(--border-width) solid var(--border-dark);
+}
+
+.product-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 15px;
+  transition: var(--transition-fast);
+}
+
+.product-card:hover .product-card-img {
+  transform: scale(1.04);
+}
+
+/* Retro Badges */
+.badge {
+  font-family: 'Space Mono', monospace;
+  border-radius: var(--border-radius-retro);
+  padding: 5px 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: var(--border-radius-retro);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1.5px solid var(--border-dark);
+  box-shadow: 2px 2px 0px var(--border-dark);
+}
+
+/* Neubrutalist Buttons */
+.btn {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  border-radius: var(--border-radius-retro);
+  border: var(--border-width) solid var(--border-dark);
+  box-shadow: var(--shadow-retro-sm);
+  transition: var(--transition-fast);
+  text-transform: uppercase;
+}
+
+.btn:active, .btn-active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px var(--border-dark);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--border-dark);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-hover);
+  border-color: var(--border-dark);
+  color: white;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--border-dark);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--border-dark);
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: var(--text-muted);
+  border-color: var(--border-dark);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--secondary-color);
+  color: #faf6eb;
+  border-color: var(--border-dark);
+}
+
+/* Hero Section Cozy Vintage Banner */
+.hero-gradient {
+  background: #faf6eb;
+  border: var(--border-width) solid var(--border-dark);
+  border-radius: var(--border-radius-retro);
+  position: relative;
+  box-shadow: var(--shadow-retro-md);
+  color: var(--text-dark) !important;
+}
+
+.hero-gradient h1, .hero-gradient p {
+  color: var(--text-dark) !important;
+}
+
+.hero-gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* Form Fields */
+.form-control, .form-select {
+  border: var(--border-width) solid var(--border-dark) !important;
+  border-radius: var(--border-radius-retro) !important;
+  font-family: 'Space Mono', monospace;
+  color: var(--text-dark);
+  background-color: white;
+  transition: var(--transition-fast);
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: white;
+  border-color: var(--primary-color) !important;
+  box-shadow: var(--shadow-retro-sm) !important;
+  outline: none;
+}
+
+.input-group-text {
+  border: var(--border-width) solid var(--border-dark) !important;
+  border-radius: var(--border-radius-retro) 0 0 var(--border-radius-retro) !important;
+  background-color: var(--accent-color) !important;
+  color: var(--text-dark) !important;
+}
+
+.form-control.border-start-0 {
+  border-radius: 0 var(--border-radius-retro) var(--border-radius-retro) 0 !important;
+}
+
+/* Sticky panels */
+.card {
+  border: var(--border-width) solid var(--border-dark);
+  border-radius: var(--border-radius-retro);
+  box-shadow: var(--shadow-retro-md);
+  background-color: white;
+}
+
+/* Toast alert customized styling */
+.toast-custom {
+  background: var(--secondary-color);
+  color: #faf6eb;
+  border: var(--border-width) solid var(--border-dark);
+  border-radius: var(--border-radius-retro);
+  box-shadow: var(--shadow-retro-md);
+}
+
+/* Interactive Card Flipping Container */
+.flip-card-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 25px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #111;
+}
+
+.card-front {
+  background: linear-gradient(135deg, #b85d43 0%, #2d2724 100%);
+}
+
+.card-back {
+  background: linear-gradient(135deg, #2d2724 0%, #b85d43 100%);
+  transform: rotateY(180deg);
+}
+
+.card-magnetic-strip {
+  background: #111;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.card-signature-box {
+  background: #fff;
+  height: 35px;
+  width: 70%;
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  color: #111;
+  padding: 5px;
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+/* Shimmer Skeletal Loading States */
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #f0eae1 25%, #e6dfd4 50%, #f0eae1 75%);
+  background-size: 200% 100%;
+  animation: loading-shimmer 1.5s infinite;
+}
+
+/* Stat Cards in Dashboard */
+.stat-card {
+  border: var(--border-width) solid var(--border-dark);
+  box-shadow: var(--shadow-retro-sm);
+  background: white;
+  border-radius: var(--border-radius-retro);
+}
+
+.stat-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-retro-md);
+}
+
+/* Custom Table Borders */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  border-bottom: var(--border-width) solid var(--border-dark) !important;
+  background-color: #faf6eb !important;
+  color: var(--text-dark) !important;
+}
+
+.table td {
+  border-bottom: 1.5px solid var(--border-dark) !important;
+}
+
+.table-responsive {
+  border: var(--border-width) solid var(--border-dark);
+  border-radius: var(--border-radius-retro);
+  overflow: hidden;
+}
+
+/* Custom Delivery tracker */
+.timeline-bubble {
+  border: var(--border-width) solid var(--border-dark);
+  box-shadow: var(--shadow-retro-sm);
+}
+
+.timeline-step.active .timeline-bubble {
+  background: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(192, 92, 70, 0.25);
+}
+
+.timeline-step.completed .timeline-bubble {
+  background: var(--success-color);
 }
