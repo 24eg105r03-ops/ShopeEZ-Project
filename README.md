@@ -5,9 +5,11 @@ ShopEZ is a highly polished, responsive MERN-stack e-commerce web application fe
 
 ## 🖼️ Project Screenshots & Previews
 
-| Catalog Home Page | Seller Operations Console | Secure Login |
-| :---: | :---: | :---: |
-| ![Catalog Home Page](docs/screenshots/home.jpg) | ![Seller Operations Console](docs/screenshots/seller_dashboard.jpg) | ![Secure Login](docs/screenshots/login.jpg) |
+| Catalog Home Page | Shopping Bag / Cart |
+| :---: | :---: |
+| ![Catalog Home Page](docs/screenshots/home.png) | ![Shopping Bag / Cart](docs/screenshots/cart.png) |
+| **User Registration** | **Seller Operations Console** |
+| ![User Registration](docs/screenshots/register.png) | ![Seller Operations Console](docs/screenshots/seller_dashboard.png) |
 
 ---
 
